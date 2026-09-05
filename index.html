@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distribuição & monetização para criadores | The Watermouse</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://creators.thewatermouse.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Watermouse">
+<meta property="og:title" content="Distribuição & monetização para criadores | The Watermouse">
+<meta property="og:description" content="A camada de distribuição e monetização que faz o seu conteúdo alcançar e render mais do que ele renderia sozinho. Publique com a gente.">
+<meta property="og:url" content="https://creators.thewatermouse.com/">
+<meta name="description" content="Não é um veículo de notícias. É a infraestrutura de distribuição e monetização que amplifica criadores de conteúdo — mais alcance e mais receita do que você teria sozinho.">
+<style>
+  :root{
+    --sage:#4A7C6F;--sage-light:#7AAB9B;--sage-pale:#EAF2EF;--sage-dark:#2D5246;
+    --warm:#E8DDD0;--warm-deep:#C4A882;--warm-dark:#7A6450;--warm-pale:#FBF5ED;
+    --ink:#1C2B26;--off-white:#FAF8F5;--white:#FFFFFF;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 60px;}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:100;background:rgba(250,248,245,0.93);backdrop-filter:blur(12px);border-bottom:1px solid rgba(28,43,38,0.07);}
+  .nav-inner{max-width:1080px;margin:0 auto;padding:20px 60px;display:flex;align-items:center;justify-content:space-between;}
+  .nav-logo{display:flex;align-items:center;gap:9px;}
+  .nav-logo-word{font-family:'Fraunces',serif;font-size:21px;font-weight:300;color:var(--ink);letter-spacing:0.04em;}
+  .nav-logo-tag{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--warm-dark);border-left:1px solid rgba(28,43,38,0.15);padding-left:9px;}
+  .nav-cta{background:var(--ink);color:var(--white)!important;padding:10px 20px;border-radius:100px;font-size:13px;font-weight:500;transition:background 0.2s;}
+  .nav-cta:hover{background:#000;}
+
+  /* HERO */
+  .hero{padding:80px 0 60px;position:relative;overflow:hidden;}
+  .hero-blob{position:absolute;right:-120px;top:-100px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at 40% 40%,var(--warm-pale) 0%,transparent 65%);opacity:0.7;pointer-events:none;}
+  .hero-inner{position:relative;z-index:1;}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--warm-pale);border:1px solid rgba(196,168,130,0.3);padding:7px 16px;border-radius:100px;font-size:12px;font-weight:500;color:var(--warm-dark);letter-spacing:0.04em;margin-bottom:26px;}
+  .eyebrow-dot{width:6px;height:6px;background:var(--warm-deep);border-radius:50%;}
+  .hero-headline{font-family:'Fraunces',serif;font-size:56px;font-weight:300;line-height:1.06;color:var(--ink);margin-bottom:24px;max-width:840px;}
+  .hero-headline em{font-style:italic;color:var(--sage);}
+  .hero-sub{font-size:18px;font-weight:300;line-height:1.7;color:rgba(28,43,38,0.62);max-width:600px;margin-bottom:38px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+  .btn-primary{display:inline-flex;align-items:center;gap:9px;background:var(--sage);color:var(--white)!important;padding:15px 28px;border-radius:100px;font-size:15px;font-weight:500;transition:background 0.2s,transform 0.2s;}
+  .btn-primary:hover{background:var(--sage-dark);transform:translateY(-1px);}
+  .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:100px;font-size:15px;font-weight:400;color:var(--ink);border:1.5px solid rgba(28,43,38,0.12);transition:border-color 0.2s;}
+  .btn-ghost:hover{border-color:var(--ink);}
+  .hero-foot{margin-top:26px;font-size:13px;font-weight:300;color:rgba(28,43,38,0.45);}
+
+  /* SECTION shell */
+  section.block{padding:80px 0;}
+  .label{font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--sage);margin-bottom:16px;}
+  .h2{font-family:'Fraunces',serif;font-size:36px;font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:18px;}
+  .h2 em{font-style:italic;color:var(--sage);}
+  .lead{font-size:17px;font-weight:300;line-height:1.75;color:rgba(28,43,38,0.62);max-width:640px;}
+
+  /* CONTRAST STRIP — o que não somos */
+  .contrast{background:var(--white);border-top:1px solid rgba(28,43,38,0.07);border-bottom:1px solid rgba(28,43,38,0.07);}
+  .contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+  .contrast-col{padding:44px 40px;}
+  .contrast-col:first-child{border-right:1px solid rgba(28,43,38,0.07);}
+  .contrast-k{font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:18px;}
+  .contrast-col.no .contrast-k{color:var(--warm-dark);}
+  .contrast-col.yes .contrast-k{color:var(--sage);}
+  .contrast-item{display:flex;align-items:flex-start;gap:12px;padding:10px 0;font-size:15px;font-weight:300;line-height:1.55;color:rgba(28,43,38,0.72);}
+  .contrast-item svg{flex-shrink:0;margin-top:3px;}
+
+  /* LOOP */
+  .loop-section{background:var(--ink);color:var(--off-white);}
+  .loop-section .label{color:var(--sage-light);}
+  .loop-section .h2{color:var(--off-white);}
+  .loop-section .lead{color:rgba(250,248,245,0.6);}
+  .loop{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:48px;position:relative;}
+  .loop-step{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:18px;padding:26px 22px;position:relative;}
+  .loop-num{font-family:'Fraunces',serif;font-size:15px;font-weight:400;color:var(--sage-light);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+  .loop-num .dot{width:26px;height:26px;border-radius:50%;border:1px solid rgba(122,171,155,0.5);display:flex;align-items:center;justify-content:center;font-size:13px;}
+  .loop-title{font-size:16px;font-weight:500;color:var(--off-white);margin-bottom:8px;}
+  .loop-body{font-size:13.5px;font-weight:300;line-height:1.6;color:rgba(250,248,245,0.55);}
+  .loop-arrow{position:absolute;right:-11px;top:50%;transform:translateY(-50%);z-index:2;color:var(--sage-light);opacity:0.7;}
+  .loop-cycle{margin-top:30px;display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:400;color:var(--sage-light);background:rgba(122,171,155,0.1);border:1px solid rgba(122,171,155,0.25);padding:10px 18px;border-radius:100px;}
+
+  /* VALUE — o que você ganha */
+  .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px;}
+  .val-card{background:var(--white);border:1px solid rgba(28,43,38,0.06);border-radius:18px;padding:30px 26px;}
+  .val-ico{width:46px;height:46px;border-radius:12px;background:var(--sage-pale);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+  .val-title{font-size:16px;font-weight:500;color:var(--ink);margin-bottom:8px;}
+  .val-body{font-size:14px;font-weight:300;line-height:1.65;color:rgba(28,43,38,0.6);}
+
+  /* CRITERIA */
+  .crit-section{background:var(--warm-pale);}
+  .crit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px;}
+  .crit-card{background:var(--white);border:1px solid rgba(196,168,130,0.3);border-radius:20px;padding:32px 28px;}
+  .crit-n{font-family:'Fraunces',serif;font-size:14px;font-weight:400;color:var(--warm-deep);letter-spacing:0.08em;margin-bottom:16px;}
+  .crit-h{font-family:'Fraunces',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:12px;}
+  .crit-p{font-size:14px;font-weight:300;line-height:1.7;color:rgba(28,43,38,0.62);}
+  .crit-note{margin-top:32px;font-size:13px;font-weight:300;color:rgba(28,43,38,0.5);line-height:1.6;}
+
+  /* FORM */
+  .form-section{background:var(--sage);color:var(--white);}
+  .form-section .label{color:rgba(250,248,245,0.6);}
+  .form-shell{display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:start;}
+  .form-intro h2{font-family:'Fraunces',serif;font-size:38px;font-weight:300;line-height:1.12;color:var(--white);margin-bottom:18px;}
+  .form-intro p{font-size:16px;font-weight:300;line-height:1.7;color:rgba(250,248,245,0.8);margin-bottom:22px;max-width:420px;}
+  .form-assure{display:flex;align-items:flex-start;gap:10px;font-size:13px;font-weight:300;color:rgba(250,248,245,0.7);line-height:1.55;max-width:420px;}
+  .form-card{background:var(--white);border-radius:24px;padding:36px;box-shadow:0 20px 50px rgba(28,43,38,0.15);}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .field{margin-bottom:18px;}
+  .field.full{grid-column:1 / -1;}
+  .field label{display:block;font-size:12px;font-weight:500;letter-spacing:0.04em;color:var(--ink);margin-bottom:7px;}
+  .field label .req{color:var(--sage);}
+  .field input,.field select{width:100%;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:300;color:var(--ink);background:var(--off-white);border:1.5px solid rgba(28,43,38,0.1);border-radius:12px;padding:13px 15px;transition:border-color .2s,background .2s;-webkit-appearance:none;appearance:none;}
+  .field select{background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%231C2B26' stroke-opacity='0.5' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:38px;}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--sage);background:var(--white);}
+  .field input::placeholder{color:rgba(28,43,38,0.35);}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+  .form-submit{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--ink);color:var(--white)!important;border:none;cursor:pointer;padding:16px 28px;border-radius:100px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;transition:background .2s,transform .2s;margin-top:4px;}
+  .form-submit:hover{background:#000;transform:translateY(-1px);}
+  .form-submit:disabled{opacity:0.6;cursor:default;transform:none;}
+  .form-fine{font-size:12px;font-weight:300;color:rgba(28,43,38,0.45);text-align:center;margin-top:16px;line-height:1.55;}
+  .form-fine a{color:var(--sage);}
+  .form-status{display:none;font-size:14px;font-weight:400;padding:14px 16px;border-radius:12px;margin-bottom:18px;line-height:1.5;}
+  .form-status.ok{display:block;background:var(--sage-pale);color:var(--sage-dark);border:1px solid rgba(74,124,111,0.25);}
+  .form-status.err{display:block;background:#FBEAE7;color:#8A3A2C;border:1px solid rgba(138,58,44,0.2);}
+  .form-success{display:none;text-align:center;padding:20px 10px;}
+  .form-success.show{display:block;}
+  .form-success-ico{width:56px;height:56px;border-radius:50%;background:var(--sage-pale);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
+  .form-success h3{font-family:'Fraunces',serif;font-size:24px;font-weight:400;color:var(--ink);margin-bottom:10px;}
+  .form-success p{font-size:15px;font-weight:300;color:rgba(28,43,38,0.6);line-height:1.6;max-width:320px;margin:0 auto;}
+
+  /* FOOTER */
+  footer{background:var(--ink);padding:40px 0;}
+  .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+  .footer-logo{font-family:'Fraunces',serif;font-size:18px;font-weight:300;color:rgba(250,248,245,0.45);}
+  .footer-links{display:flex;gap:24px;flex-wrap:wrap;}
+  .footer-links a{font-size:12px;color:rgba(250,248,245,0.3);}
+  .footer-copy{font-size:12px;color:rgba(250,248,245,0.18);}
+
+  @media(max-width:860px){
+    .wrap,.nav-inner{padding-left:24px;padding-right:24px;}
+    .hero-headline{font-size:40px;}
+    .loop{grid-template-columns:1fr 1fr;}
+    .loop-arrow{display:none;}
+    .val-grid{grid-template-columns:1fr;}
+    .crit-grid{grid-template-columns:1fr;}
+    .contrast-grid{grid-template-columns:1fr;}
+    .contrast-col:first-child{border-right:none;border-bottom:1px solid rgba(28,43,38,0.07);}
+    .form-shell{grid-template-columns:1fr;gap:32px;}
+  }
+  @media(max-width:560px){
+    .hero-headline{font-size:32px;}
+    .loop{grid-template-columns:1fr;}
+    .frow{grid-template-columns:1fr;gap:0;}
+    .form-card{padding:26px 22px;}
+    section.block{padding:60px 0;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">
+      <svg width="22" height="22" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="22" stroke="#4A7C6F" stroke-width="1.5" fill="none"/>
+        <circle cx="24" cy="24" r="6" fill="#2D5246"/>
+        <line x1="24" y1="4" x2="24" y2="14" stroke="#4A7C6F" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="24" y1="34" x2="24" y2="44" stroke="#4A7C6F" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="4" y1="24" x2="14" y2="24" stroke="#4A7C6F" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="34" y1="24" x2="44" y2="24" stroke="#4A7C6F" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="nav-logo-word">watermouse</span>
+      <span class="nav-logo-tag">para criadores</span>
+    </a>
+    <a href="#interesse" class="nav-cta">Quero participar</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Em construção · vagas limitadas na primeira leva</div>
+    <h1 class="hero-headline">A infraestrutura que faz o seu conteúdo <em>alcançar e render</em> mais do que renderia sozinho.</h1>
+    <p class="hero-sub">Não é um veículo de notícias. É a camada de distribuição e monetização que a Watermouse está construindo para criadores — você continua fazendo o que faz de melhor, a gente cuida do que amplia e do que paga.</p>
+    <div class="hero-actions">
+      <a href="#interesse" class="btn-primary">Entrar na lista de interesse
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#como-funciona" class="btn-ghost">Como funciona</a>
+    </div>
+    <p class="hero-foot">Estamos formando o primeiro grupo de criadores. Sem taxa de entrada, sem exclusividade obrigatória.</p>
+  </div>
+</section>
+
+<!-- CONTRAST -->
+<section class="contrast">
+  <div class="wrap contrast-grid">
+    <div class="contrast-col no">
+      <div class="contrast-k">O que isto não é</div>
+      <div class="contrast-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7A6450" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Mais um perfil genérico despejando conteúdo pra ninguém.</div>
+      <div class="contrast-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7A6450" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Uma plataforma onde você faz todo o trabalho e a distribuição some.</div>
+      <div class="contrast-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7A6450" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Promessa de viralizar sem nenhuma máquina por trás.</div>
+    </div>
+    <div class="contrast-col yes">
+      <div class="contrast-k">O que isto é</div>
+      <div class="contrast-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Uma camada de distribuição que coloca o seu conteúdo na frente de mais gente certa.</div>
+      <div class="contrast-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Caminhos de receita que sozinho você não teria acesso ou tempo de montar.</div>
+      <div class="contrast-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Uma rede que fica mais forte a cada criador que entra — e devolve isso pra você.</div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA / LOOP -->
+<section class="block loop-section" id="como-funciona">
+  <div class="wrap">
+    <div class="label">Como funciona</div>
+    <h2 class="h2">Um ciclo que <em>cresce sozinho.</em></h2>
+    <p class="lead">Cada criador que entra torna a rede mais valiosa pro próximo — e essa força volta em forma de mais alcance e mais receita pra quem já está dentro.</p>
+    <div class="loop">
+      <div class="loop-step">
+        <div class="loop-num"><span class="dot">1</span></div>
+        <div class="loop-title">Você publica com a gente</div>
+        <div class="loop-body">Seu conteúdo entra na nossa camada de distribuição — sem parar de crescer nos seus próprios canais.</div>
+        <div class="loop-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="loop-step">
+        <div class="loop-num"><span class="dot">2</span></div>
+        <div class="loop-title">Ganha alcance e receita</div>
+        <div class="loop-body">Distribuição amplificada e caminhos de monetização — marcas, parcerias e formatos que você não montaria sozinho.</div>
+        <div class="loop-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="loop-step">
+        <div class="loop-num"><span class="dot">3</span></div>
+        <div class="loop-title">A rede atrai mais criadores</div>
+        <div class="loop-body">Resultado real vira prova. Novos criadores entram — e cada um traz mais audiência e mais valor pra rede.</div>
+        <div class="loop-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="loop-step">
+        <div class="loop-num"><span class="dot">4</span></div>
+        <div class="loop-title">O ciclo se repete — mais forte</div>
+        <div class="loop-body">Mais criadores, mais distribuição, mais receita pra todo mundo que já está dentro. E recomeça.</div>
+      </div>
+    </div>
+    <div class="loop-cycle">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v4h-4"/></svg>
+      Quanto mais a rede gira, mais cada criador leva.
+    </div>
+  </div>
+</section>
+
+<!-- VALOR -->
+<section class="block">
+  <div class="wrap">
+    <div class="label">O que você leva</div>
+    <h2 class="h2">O que sozinho <em>custa caro ou não dá.</em></h2>
+    <p class="lead">A parte que consome tempo, exige rede e trava a maioria dos criadores — a gente resolve, pra você focar no conteúdo.</p>
+    <div class="val-grid">
+      <div class="val-card">
+        <div class="val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+        <div class="val-title">Distribuição amplificada</div>
+        <div class="val-body">Seu conteúdo alcança além do seu próprio feed — colocado na frente de audiências certas que você não atingiria sozinho.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="val-title">Monetização de verdade</div>
+        <div class="val-body">Parcerias com marcas, formatos pagos e caminhos de receita acertados e cobrados pela Watermouse — você recebe, sem correr atrás.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="val-title">Uma rede que puxa você</div>
+        <div class="val-body">Você entra numa rede de criadores que se amplificam entre si — não um perfil solto competindo com o algoritmo todo dia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRITÉRIOS -->
+<section class="block crit-section">
+  <div class="wrap">
+    <div class="label">Perfil que buscamos</div>
+    <h2 class="h2">Pra quem é <em>a primeira leva.</em></h2>
+    <p class="lead">Estamos montando o grupo com cuidado. Não é sobre ser gigante — é sobre ter um público real, um nicho claro e um ritmo constante.</p>
+    <div class="crit-grid">
+      <div class="crit-card">
+        <div class="crit-n">01</div>
+        <div class="crit-h">Nicho definido</div>
+        <div class="crit-p">Você é referência em algo — lifestyle, viagem, livros, finanças, games, o que for. Um público que sabe exatamente por que segue você.</div>
+      </div>
+      <div class="crit-card">
+        <div class="crit-n">02</div>
+        <div class="crit-h">Audiência mínima</div>
+        <div class="crit-p">A partir de ~5.000 seguidores engajados em pelo menos uma plataforma. Engajamento real conta mais que número inflado.</div>
+      </div>
+      <div class="crit-card">
+        <div class="crit-n">03</div>
+        <div class="crit-h">Frequência constante</div>
+        <div class="crit-p">Você publica com regularidade — pelo menos algumas vezes por semana. O ciclo só gira com quem mantém o ritmo.</div>
+      </div>
+    </div>
+    <p class="crit-note">Chegou perto mas não bateu todos os critérios? Entra na lista mesmo assim — estamos abrindo em fases e ajustando o perfil a cada leva.</p>
+  </div>
+</section>
+
+<!-- FORM / INTERESSE -->
+<section class="block form-section" id="interesse">
+  <div class="wrap">
+    <div class="form-shell">
+      <div class="form-intro">
+        <div class="label">Lista de interesse</div>
+        <h2>Quer ser um dos primeiros criadores?</h2>
+        <p>Deixa seus dados abaixo. A gente avalia o perfil e volta com os próximos passos — sem compromisso, sem taxa de entrada.</p>
+        <div class="form-assure">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(250,248,245,0.7)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Seus dados vão direto pra gente e não são compartilhados. Só usamos pra falar sobre a rede.
+        </div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-status" id="form-status" role="alert"></div>
+
+        <form id="creator-form" novalidate>
+          <div class="frow">
+            <div class="field">
+              <label for="f-nome">Nome <span class="req">*</span></label>
+              <input type="text" id="f-nome" name="nome" placeholder="Seu nome" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="f-email">E-mail <span class="req">*</span></label>
+              <input type="email" id="f-email" name="email" placeholder="voce@email.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="f-perfil">Perfil principal (@ ou link) <span class="req">*</span></label>
+            <input type="text" id="f-perfil" name="perfil" placeholder="@seuperfil ou link do canal" required>
+          </div>
+
+          <div class="frow">
+            <div class="field">
+              <label for="f-nicho">Nicho <span class="req">*</span></label>
+              <input type="text" id="f-nicho" name="nicho" placeholder="Ex: viagem, livros, finanças" required>
+            </div>
+            <div class="field">
+              <label for="f-audiencia">Tamanho da audiência <span class="req">*</span></label>
+              <select id="f-audiencia" name="audiencia" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="< 5k">Menos de 5.000</option>
+                <option value="5k–20k">5.000 – 20.000</option>
+                <option value="20k–100k">20.000 – 100.000</option>
+                <option value="100k–500k">100.000 – 500.000</option>
+                <option value="500k+">Mais de 500.000</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="f-frequencia">Com que frequência você publica? <span class="req">*</span></label>
+            <select id="f-frequencia" name="frequencia" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="Diariamente">Diariamente</option>
+              <option value="Várias vezes por semana">Várias vezes por semana</option>
+              <option value="Semanalmente">Semanalmente</option>
+              <option value="A cada duas semanas ou menos">A cada duas semanas ou menos</option>
+            </select>
+          </div>
+
+          <!-- honeypot anti-spam (FormSubmit lê o campo _honey) -->
+          <div class="hp" aria-hidden="true"><label>Não preencha<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+
+          <button type="submit" class="form-submit" id="form-submit">
+            Quero participar
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-fine">Ao enviar, você concorda com a nossa <a href="https://thewatermouse.com/privacidade">política de privacidade</a>.</p>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <div class="form-success-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div>
+          <h3>Recebemos! 🎯</h3>
+          <p>Obrigado pelo interesse. A gente avalia o seu perfil e volta em breve com os próximos passos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="footer-logo">watermouse</span>
+    <div class="footer-links">
+      <a href="https://thewatermouse.com">The Watermouse</a>
+      <a href="#interesse">Quero participar</a>
+    </div>
+    <span class="footer-copy">© 2026 The Watermouse. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script>
+  /* ============================================================
+     CAPTURA DE E-MAIL — FormSubmit (sem conta)
+     ------------------------------------------------------------
+     Os leads são enviados direto pro e-mail abaixo via FormSubmit
+     (https://formsubmit.co) — não precisa de conta nem dashboard.
+
+     ATIVAÇÃO (uma vez só): na primeira vez que o form for enviado,
+     o FormSubmit manda um e-mail de confirmação pra caixa do
+     digo@thewatermouse.com (via Zoho). Basta clicar no link
+     "Activate Form" UMA vez. A partir daí, todos os envios chegam.
+
+     Enquanto o Zoho/digo@thewatermouse.com não estiver ativo, o
+     form NÃO perde o lead: cai automaticamente no fallback de
+     mailto: pro FALLBACK_EMAIL (que já recebe hoje). Nunca fica
+     só client-side.
+     ============================================================ */
+  var FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/digo@thewatermouse.com";
+  var FALLBACK_EMAIL = "rodrigokato@gmail.com";      // fallback que já recebe hoje
+
+  (function () {
+    var form = document.getElementById("creator-form");
+    var statusEl = document.getElementById("form-status");
+    var submitBtn = document.getElementById("form-submit");
+    var successEl = document.getElementById("form-success");
+
+    function showStatus(type, msg) {
+      statusEl.className = "form-status " + type;
+      statusEl.textContent = msg;
+    }
+    function clearStatus() { statusEl.className = "form-status"; statusEl.textContent = ""; }
+
+    function collect() {
+      return {
+        nome: form.nome.value.trim(),
+        email: form.email.value.trim(),
+        perfil: form.perfil.value.trim(),
+        nicho: form.nicho.value.trim(),
+        audiencia: form.audiencia.value,
+        frequencia: form.frequencia.value
+      };
+    }
+
+    function validEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
+    function mailtoFallback(d) {
+      var subject = "Interesse — rede de criadores (" + (d.nome || "sem nome") + ")";
+      var body =
+        "Nome: " + d.nome + "\n" +
+        "E-mail: " + d.email + "\n" +
+        "Perfil: " + d.perfil + "\n" +
+        "Nicho: " + d.nicho + "\n" +
+        "Audiência: " + d.audiencia + "\n" +
+        "Frequência: " + d.frequencia + "\n";
+      var href = "mailto:" + FALLBACK_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+      window.location.href = href;
+    }
+
+    function succeed() {
+      form.style.display = "none";
+      clearStatus();
+      successEl.classList.add("show");
+    }
+
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      clearStatus();
+
+      // honeypot: se estiver preenchido, é bot — finge sucesso e sai
+      if (form._honey && form._honey.value) { succeed(); return; }
+
+      var d = collect();
+      if (!d.nome || !d.perfil || !d.nicho || !d.audiencia || !d.frequencia) {
+        showStatus("err", "Preenche todos os campos obrigatórios, por favor.");
+        return;
+      }
+      if (!validEmail(d.email)) {
+        showStatus("err", "Confere o e-mail — parece que tem algo errado.");
+        return;
+      }
+
+      // POST real via AJAX pro FormSubmit (fica na página)
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Enviando…";
+
+      var fd = new FormData(form);
+      fd.append("_subject", "Novo interesse — rede de criadores");
+      fd.append("_template", "table");
+      fd.append("_captcha", "false");
+
+      fetch(FORMSUBMIT_ENDPOINT, {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: fd
+      }).then(function (res) {
+        return res.json().catch(function () { return {}; });
+      }).then(function (json) {
+        if (json && (json.success === "true" || json.success === true)) { succeed(); }
+        else { throw new Error("bad response"); }
+      }).catch(function () {
+        // Se o POST falhar por qualquer motivo, não perde o lead: cai no e-mail
+        showStatus("ok", "Quase lá — abrindo seu e-mail pra concluir o envio…");
+        mailtoFallback(d);
+      }).finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Quero participar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
