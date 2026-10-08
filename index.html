@@ -74,6 +74,14 @@
         },
         {
           "@type": "Question",
+          "name": "Como funciona o pagamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Antes de criar qualquer coisa, você já sabe quanto vai receber por aquela parceria e só topa se fizer sentido. A gente fecha o valor com a marca, cuida do contrato e da cobrança, e garante que o pagamento caia pra você no prazo combinado. Nossa remuneração é acordada de forma transparente e nunca é uma dedução escondida do que é seu."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Tem taxa de entrada ou exclusividade?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -90,10 +98,34 @@
         },
         {
           "@type": "Question",
-          "name": "Quem pode participar?",
+          "name": "Preciso ter muitos seguidores?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Criadores com um nicho claro, audiência engajada (a partir de ~5 mil seguidores em pelo menos uma plataforma) e ritmo constante. Estamos formando a primeira leva com vagas limitadas, entre na lista de interesse."
+            "text": "Não precisa ser gigante. A partir de ~5 mil seguidores engajados em pelo menos uma plataforma já dá pra conversar. Engajamento real e um nicho claro contam mais que número inflado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Continuo dono dos meus canais?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Totalmente. Você segue postando e crescendo no seu perfil do seu jeito. A rede abre portas, não toma o seu espaço."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "É só no Brasil e é tudo remoto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por enquanto estamos formando a rede com criadores no Brasil, e tudo é remoto. UGC e TikTok Live você faz de onde estiver."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Me inscrevi, e agora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A gente avalia o seu perfil e, se fizer sentido pra esta leva, entra em contato com os próximos passos. Se ainda não for o momento, você fica na lista pras próximas aberturas."
           }
         }
       ]
@@ -250,6 +282,18 @@
     .nav-cta{padding:9px 15px;font-size:12px;}
   }
   @media(max-width:380px){ .nav-logo-tag{display:none;} .nav-logo-word{font-size:16px;} }
+
+  /* FAQ */
+  .faq-section{background:var(--white);border-top:1px solid rgba(28,43,38,0.07);}
+  .faq-list{max-width:780px;margin:44px 0 0;}
+  .faq-item{border-top:1px solid rgba(28,43,38,0.1);}
+  .faq-item:last-child{border-bottom:1px solid rgba(28,43,38,0.1);}
+  .faq-item summary{list-style:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:18px;font-family:'Fraunces',serif;font-size:19px;font-weight:400;color:var(--ink);line-height:1.35;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary:hover{color:var(--sage-dark);}
+  .faq-item summary .q-ico{flex-shrink:0;color:var(--sage);transition:transform 0.25s ease;}
+  .faq-item[open] summary .q-ico{transform:rotate(45deg);}
+  .faq-a{padding:0 0 24px;font-size:15px;font-weight:300;line-height:1.72;color:rgba(28,43,38,0.66);max-width:680px;}
 </style>
 </head>
 <body>
@@ -364,6 +408,32 @@
   </div>
 </section>
 
+<!-- PAGAMENTO -->
+<section class="block">
+  <div class="wrap">
+    <div class="label">A parte do dinheiro</div>
+    <h2 class="h2">Transparente, e você <em>recebe. Sempre.</em></h2>
+    <p class="lead">A maior dor de quem cria é cobrar e correr atrás de pagamento. Com a gente, isso deixa de ser problema seu.</p>
+    <div class="val-grid">
+      <div class="val-card">
+        <div class="val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="val-title">Você sabe antes</div>
+        <div class="val-body">O valor de cada parceria é combinado e você aprova antes de criar. Nada de trabalhar no escuro.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
+        <div class="val-title">A gente cobra por você</div>
+        <div class="val-body">Contrato e cobrança com a marca ficam com a Watermouse. Você não precisa negociar nem cobrar ninguém.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="val-title">Pagamento no prazo</div>
+        <div class="val-body">A gente garante que o combinado caia na sua conta no prazo, sem você ter que ir atrás. Nossa parte é acordada de forma transparente, nunca uma dedução escondida do que é seu.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CRITÉRIOS -->
 <section class="block crit-section">
   <div class="wrap">
@@ -388,6 +458,48 @@
       </div>
     </div>
     <p class="crit-note">Chegou perto mas não bateu todos os critérios? Entra na lista mesmo assim, estamos abrindo em fases e ajustando o perfil a cada leva.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block faq-section" id="faq">
+  <div class="wrap">
+    <div class="label">Dúvidas frequentes</div>
+    <h2 class="h2">Perguntas que todo <em>criador faz.</em></h2>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>O que é a Watermouse para criadores?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">É uma agência de TikTok Live e UGC. Você entra na nossa rede de criadores e a gente conecta você com marcas, fecha as parcerias e cuida da negociação, do contrato e do pagamento. Você foca em criar.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Como funciona o pagamento?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Antes de criar qualquer coisa, você já sabe quanto vai receber por aquela parceria e só topa se fizer sentido. A gente fecha o valor com a marca, cuida do contrato e da cobrança, e garante que o pagamento caia pra você no prazo combinado. Nossa remuneração é acordada de forma transparente e nunca é uma dedução escondida do que é seu.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Tem taxa de entrada ou exclusividade?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Não. Não há taxa de entrada e não há exclusividade obrigatória. Você continua crescendo e postando nos seus próprios canais normalmente.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Que tipo de conteúdo eu faço?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">UGC (conteúdo que as marcas usam nos anúncios e nas redes delas) e TikTok Live. A gente traz as campanhas; você cria no seu estilo.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Preciso ter muitos seguidores?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Não precisa ser gigante. A partir de ~5 mil seguidores engajados em pelo menos uma plataforma já dá pra conversar. Engajamento real e um nicho claro contam mais que número inflado.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Continuo dono dos meus canais?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Totalmente. Você segue postando e crescendo no seu perfil do seu jeito. A rede abre portas, não toma o seu espaço.</div>
+      </details>
+      <details class="faq-item">
+        <summary>É só no Brasil e é tudo remoto?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Por enquanto estamos formando a rede com criadores no Brasil, e tudo é remoto. UGC e TikTok Live você faz de onde estiver.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Me inscrevi, e agora?<svg class="q-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">A gente avalia o seu perfil e, se fizer sentido pra esta leva, entra em contato com os próximos passos. Se ainda não for o momento, você fica na lista pras próximas aberturas.</div>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -479,6 +591,7 @@
     <span class="footer-logo">watermouse</span>
     <div class="footer-links">
       <a href="https://thewatermouse.com">The Watermouse</a>
+      <a href="#faq">Dúvidas</a>
       <a href="#interesse">Quero participar</a>
     </div>
     <span class="footer-copy">© 2026 The Watermouse. Todos os direitos reservados.</span>
