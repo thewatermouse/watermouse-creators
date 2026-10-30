@@ -93,6 +93,35 @@ GUIAS = [
 <p>Uma agência séria explica como ganha dinheiro, mostra o contrato, deixa você sair e não vende milagre. Veja o <a href="/guias/checklist-antes-de-aceitar-convite-de-agencia/">checklist de 12 perguntas</a> para comparar propostas.</p>
 {NOTA}""",
   fontes=[OFF2, OFF1, 'Sinais elaborados pela equipe do Watermouse com base em práticas comuns de fraude contra criadores; não é aconselhamento jurídico.']),
+
+ dict(slug="rotina-de-lives-no-tiktok-constancia-e-agenda", title="Rotina de LIVEs no TikTok: constância, agenda e o que testar",
+  desc="Como montar uma rotina de LIVEs no TikTok: dias e horários fixos, como avisar o público e como testar o que funciona, com o que é dica de mercado e o que é regra do TikTok.",
+  lede="Quase todo guia de LIVE repete a mesma palavra: constância. Aqui está o que costuma funcionar na prática e o que é só dica de blog, para você testar com o seu público.",
+  card="Dias fixos, aviso na bio e testes de horário: o que é prática comum e o que não é regra.",
+  corpo=f"""<h2>Primeiro, uma distinção</h2>
+<p>As regras de LIVE (quem pode transmitir, o que é permitido, como funcionam presentes e programas) são definidas pelo TikTok e podem mudar. As dicas abaixo são práticas recomendadas por guias de mercado e redes de criadores. Não vêm da documentação oficial, e o resultado depende do seu nicho e da sua audiência.</p>
+<h2>O que costuma ser recomendado</h2>
+<ul><li><b>Horário recorrente.</b> Vários guias dizem que o público cria hábito em torno de um horário fixo, como um programa de TV. Escolha dias e horas que você consegue manter.</li><li><b>Comece com uma frequência realista.</b> Alguns guias sugerem começar com duas ou três LIVEs por semana. Outros lembram que não é preciso transmitir todo dia. Melhor poucas LIVEs que você cumpre do que um plano que você abandona na segunda semana.</li><li><b>Avise o público.</b> Colocar os dias e horários na bio é uma recomendação comum.</li><li><b>Teste um horário de cada vez.</b> Mantenha a mesma agenda por algumas semanas antes de julgar. Se for testar outro horário, mude só ele e compare.</li><li><b>Tenha um formato.</b> Abertura, bloco principal e encerramento ajudam quem chega no meio a entender o que está acontecendo.</li></ul>
+<h2>O que medir</h2>
+<p>Em vez de olhar só o pico de espectadores, observe quanto tempo as pessoas ficam, quantos comentários e novos seguidores cada LIVE traz, e em que momento o público sai. Anote isso depois de cada transmissão e compare semana a semana.</p>
+<h2>O que não prometer a si mesmo</h2>
+<p>Nenhuma rotina garante audiência nem renda. Uma Creator Network pode ajudar a organizar agenda e metas e a acompanhar números pelo LIVE Backstage, mas o trabalho de criar uma LIVE que as pessoas querem ver continua sendo seu. Veja o que uma rede faz em <a href="/guias/o-que-e-agencia-de-tiktok-live/">o que é uma agência de TikTok LIVE</a>.</p>
+{NOTA}""",
+  fontes=[OFF1, OFF2, 'As práticas de agenda e frequência vêm de guias de terceiros (redes de criadores, blogs e agências) e não são regras do TikTok. Confira regras e requisitos atuais no aplicativo e na central de ajuda.']),
+ dict(slug="batalhas-de-live-no-tiktok-como-funcionam", title="Batalhas de LIVE no TikTok: como funcionam e cuidados",
+  desc="O que são as batalhas (partidas) de LIVE do TikTok, como funcionam de forma geral, o que varia entre fontes e cuidados para não pressionar o público.",
+  lede="Batalhas dão energia à LIVE, mas também geram dúvidas: como funciona a pontuação, quanto dura e o que pode dar errado. Veja o que os guias descrevem e o que você precisa conferir no app.",
+  card="O que são as partidas de LIVE, como a pontuação costuma funcionar e o que confirmar no app.",
+  corpo=f"""<h2>O que são</h2>
+<p>Guias que descrevem as páginas de ajuda do TikTok explicam que as batalhas aparecem no app como "partidas de LIVE": uma disputa entre criadores em uma LIVE com co-host. Os espectadores apoiam o criador de sua preferência com presentes e curtidas, e quem somar mais pontos ao final vence. Existem formatos individuais e em equipe.</p>
+<h2>Como costuma começar</h2>
+<p>O caminho descrito é: durante a LIVE, convidar outro criador como co-host e então iniciar a partida pela opção específica. O app pode sugerir criadores para convidar. Os dois criadores precisam estar em LIVE ao mesmo tempo, e as regras de idade para transmitir e receber presentes valem normalmente.</p>
+<h2>O que varia entre as fontes</h2>
+<p>Muitos guias falam em uma partida de cerca de cinco minutos, em que contam os presentes enviados dentro do tempo. Já o limite de convidados em formatos com várias pessoas aparece com números diferentes. Como as regras mudam, use isso apenas como orientação e confira a duração, a pontuação e os limites atuais no seu aplicativo.</p>
+<h2>Cuidados</h2>
+<ul><li><b>Não pressione o público.</b> Pedir apoio é normal; insistir, constranger ou prometer o que você não vai cumprir afasta as pessoas e pode ir contra as diretrizes da plataforma. Leia as diretrizes de comunidade do TikTok.</li><li><b>Combine com o parceiro.</b> Defina antes quem entra, quanto tempo dura e como será o fechamento, para a batalha não virar confusão ao vivo.</li><li><b>Preserve a sua LIVE.</b> Uma batalha por dia não substitui conteúdo. Alterne com LIVEs de conversa ou de bastidores.</li><li><b>Desconfie de atalhos.</b> Ninguém pode garantir vitória nem ganho. Veja os <a href="/guias/sinais-de-alerta-golpes-agencia-de-live/">sinais de alerta</a>.</li></ul>
+{NOTA}""",
+  fontes=[OFF1, OFF2, 'O funcionamento das partidas de LIVE (formato, pontuação, duração e limites) foi descrito a partir de guias de terceiros que resumem as páginas de ajuda do TikTok. As regras mudam: confirme no aplicativo e na central de ajuda oficial.']),
 ]
 
 CSS = """
